@@ -16,11 +16,10 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 		<script type="text/javascript">
 			(() => {
-					emailjs.init("user_ld15gCR4lqP9KeZVnfGpC");
+					emailjs.init("user_ld15gCR4lqP9KeZVnfGpC")
 			})()
 		</script>
 	</head>
@@ -161,10 +160,23 @@
 									<h2>Contact Me</h2>
 									<p>If you're interested in talking more about what I bring to the table, please contact me!</p>
 								</header>
+								<!-- <form id="contact-form">
+										<input type="hidden" name="contact_number">
+										<div class="form-group">
+											<input type="text" class="form-control" id="user_name" name="user_name" placeholder="Name">
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" id="user-email" name="user-email" placeholder="Email">
+										</div>
+											<div class="form-group">
+												<textarea class="form-control" id="message" rows="3" name="contact" placeholder="Message"></textarea>
+											</div>
+										<button type="submit" class="btn">Send</button>
+									</form> -->
 								<!-- Form -->
-										<form method="post" id="contact-form">
-												<input type="hidden" name="contact_number">
-												<div class="col-2"></div>
+										<form action="https://formspree.io/sarah@ssb.codes" method="POST" id="contact-form">
+											<input type="hidden" name="contact_number">
+											<div class="col-2"></div>
 											<div class="row gtr-uniform">
 													<div class="col-2"></div>
 												<div class="col-4 col-12-xsmall">
@@ -182,20 +194,14 @@
 												<div class="col-2"></div>
 												<div class="col-8">
 													<ul class="actions">
-														<li><input type="submit" value="Send Message" class="primary" onclick="sendAlert()" /></li>
+														<li><input type="submit" value="Send Message" class="primary" id="myBtn" /></li>
 														<li><input type="reset" value="Reset" /></li>
 													</ul>
 												</div>
 											</div>
-										</form>
+										</form> 
 							</section>
 					</div>
-					<script>
-							sendAlert = () => {
-								alert("Message sent.");
-							}
-							</script>
-
 		<!-- Footer -->
 <footer id="footer">
   <section>
@@ -238,6 +244,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="modal.js"></script>
 
 	</body>
 </html>
