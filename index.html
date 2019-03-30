@@ -15,6 +15,14 @@
 
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+		<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+		<script type="text/javascript">
+			(() => {
+					emailjs.init("user_ld15gCR4lqP9KeZVnfGpC");
+			})()
+		</script>
 	</head>
 	<body class="is-preload">
 
@@ -29,7 +37,16 @@
 						Denver, Colorado.</p>
 					</header>
 
-				<div w3-include-html="nav.html"></div>
+				<!-- <div w3-include-html="nav.html"></div> -->
+					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">About Me</a></li>
+							<li><a href="#first">Resume</a></li>
+							<li><a href="#second">What I'm Looking For</a></li>
+							<li><a href="#cta">Contact Me</a></li>
+						</ul>
+					</nav>
 
 				<!-- Main -->
 					<div id="main">
@@ -41,11 +58,11 @@
 										<header class="major">
 											<h2>About Me</h2>
 										</header>
-											<p>I am actively seeking a full-time position as a web developer here in Denver, Colorado. I recently graduated from the Galvanize Full Stack Web Development Immersive. I love to use JavaScript/ES6, CSS3, Sass, React, AWS, Git, Node, and HTML5.</p>
+											<p>Hello! My name is Sarah and I'm actively seeking a full-time position as a web developer here in Denver, Colorado. I started coding in 1999 and am an expert in HTML5 and CSS3. Having recently graduated from the Galvanize Full Stack Web Development Immersive, I now enjoy working with JavaScript/ES6, Sass, React, AWS, Git, Node, and much more.</p>
 
 											<p>When I'm not working on my several passion projects you'll find me cooking some great Italian or Japanese food - I love to cook. Like almost everyone else in Colorado I love the outdoors and take a trip to a different National Park every summer.</p>
 										<ul class="actions">
-											<li><a href="resume.html" class="button">Resume PDF</a></li>
+											<li><a href="#first" class="button">Check out my resume</a></li>
 										</ul>
 									</div>
 									<span class="image"><img src="images/headshot.png" alt="Headshot" /></span>
@@ -53,67 +70,87 @@
 							</section>
 
 						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Career Highlights</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon major style1 fa-code"></span>
-										<h3>Ipsum consequat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>Amed sed feugiat</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-diamond"></span>
-										<h3>Dolor nullam</h3>
-										<p>Sed lorem amet ipsum dolor et amet nullam consequat a feugiat consequat tempus veroeros sed consequat.</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
+							<section id="first" class="main">
+									<header class="major main special">
+										<h2>Resume</h2>
+										<p>Web developer and recent full-stack bootcamp graduate with over a decade of HTML and CSS experience. Multiple award winner for online content. Detail-oriented and has strong leadership skills. Recent graduate of a full stack bootcamp seeking a junior or entry-level web developer position.</p>
+									</header>
+									<div id="resume">
+										<div class="box alt">
+												<div class="row gtr-uniform">
+													<div class="col-4">
+														<span class="fit">
+															<h2>Personal Info</h2>
+															<p><strong>Location</strong><br>Greater Denver Area, Colorado<br>
+															<strong>Website</strong><br>ssb.codes<br>
+															<strong>Phone</strong><br>(262)744-9387<br>
+															<strong>E-mail</strong><br>sarah@ssb.codes<br>
+															<strong>LinkedIn</strong><br>linkedin.com/in/ssbcodes<br>
+															<strong>Twitter</strong><br>twitter.com/ssbcodes</p>
+															<h2>Skills</h2>
+																<ul>
+																	<li>JavaScript</li>
+																	<li>HTML5</li>
+																	<li>CSS3</li>
+																	<li>React</li>
+																	<li>Git</li>
+																	<li>AWS</li>
+																	<li>UX/UI</li>
+																</ul>
+														</span>
+															
+													</div>
+													<div class="col-8">
+														<span class="fit">
+															<h2>Experience</h2>
+															<p><em>August 2013 - present</em><br>
+																Freelance Web Developer<br>
+																Denver, Colorado</p>
+													
+															<p>Worked on various small to medium projects using JavaScript, HTML, CSS, AWS, and various other technologies. </p>
+													
+															<p><em>May 2001 - August 2013</em><br>
+																	Online Editor<br>
+																	The Press-Enterprise Newspaper<br>
+																	Riverside, California</p>
+													
+															<p>Increased website's unique visitor count from 200,000 to over 3 million per month.</p>
+													
+															<p>Created and maintained  a custom WordPress multisite installation with bespoke plugins and widgets. Implemented 72 separate reporter blogs. Created original training documentation and provided WordPress training to entire reporting staff.</p>
+													
+															<p>Spearheaded periodic site-wide redesigns using the latest in programming language and web design best practices.</p>
+													
+															<p>Won multiple awards from the Society of Professional Journalists for original online special sections.</p>
+														
+														
+															<h2>Education</h2>
+															<p><em>November 2017 - August 2018</em><br>Galvanize Full Stack Web Development Immersive</p>
+															
+															<p>The Galvanize Web Development Immersive is over a thousand hours of industry focused training in the latest JavaScript based full stack technologies. Galvanize provides its students a challenging curriculum in an environment of collaboration and team-building.</p>
+														</span>
+													</div>
+												</div>
+										</div>
+									</div>
+									<footer class="major">
+										<ul class="actions special">
+											<li><a href="https://ssb.codes/SBohr-Resume.pdf" class="button" target="_blank">Downlaod PDF</a></li>
+										</ul>
+									</footer>
+								
 							</section>
 
 						<!-- Second Section -->
 							<section id="second" class="main special">
 								<header class="major">
-									<h2>Ipsum consequat</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>What I'm Looking For</h2>
+									<p>Culture matters more than tech stack.</p>
 								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon fa-code-fork"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open-o"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-diamond"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+								
+								<p class="content">I’ve been honing my web development skills since graduating from Galvanize and, first and foremost, I’m looking for a position where I can continue to exercise those skills. And, I’m definitely looking for a position where I can grow — professional development is something that’s really important to me since I hope to take on managerial responsibilities in the future. To sum it up, I’d love a position where I can use my skills to make an impact that I can see with my own eyes. Of course, the position is only part of the equation. Being at a company where I can grow and work toward something I care about matters, too.</p>
 								<footer class="major">
 									<ul class="actions special">
-										<li><a href="generic.html" class="button">Learn More</a></li>
+										<li><a href="#cta" class="button">Get in touch</a></li>
 									</ul>
 								</footer>
 							</section>
@@ -121,21 +158,73 @@
 						<!-- Get Started -->
 							<section id="cta" class="main special">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
+									<h2>Contact Me</h2>
+									<p>If you're interested in talking more about what I bring to the table, please contact me!</p>
 								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
+								<!-- Form -->
+										<form method="post" id="contact-form">
+												<input type="hidden" name="contact_number">
+												<div class="col-2"></div>
+											<div class="row gtr-uniform">
+													<div class="col-2"></div>
+												<div class="col-4 col-12-xsmall">
+													<input type="text" name="user-name" id="user-name" value="" placeholder="Name" />
+												</div>
+												<div class="col-4 col-12-xsmall">
+													<input type="email" name="user-email" id="user-email" value="" placeholder="Email" />
+												</div>
+												<div class="col-2"></div>
+												<div class="col-2"></div>
+												<div class="col-8">
+													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+												</div>
+												<div class="col-2"></div>
+												<div class="col-2"></div>
+												<div class="col-8">
+													<ul class="actions">
+														<li><input type="submit" value="Send Message" class="primary" onclick="sendAlert()" /></li>
+														<li><input type="reset" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
 							</section>
-
 					</div>
+					<script>
+							sendAlert = () => {
+								alert("Message sent.");
+							}
+							</script>
 
-		<div w3-include-html="footer.html"></div>		
+		<!-- Footer -->
+<footer id="footer">
+  <section>
+    <h2>This site is built with:</h2>
+    <p>HTML5, CSS3, Sass, CSS Grid, JavaScript, and a tiny bit of jQuery. It is hosted on AWS and is fully responsive.</p>
+    <ul class="actions">
+      <li><a href="https://github.com/sarahbohr/ssbcodesv2" class="button" target="_blank">ssb.codes on Github</a></li>
+    </ul>
+  </section>
+  <section>
+    <h2>Social Media</h2>
+    <ul class="icons">
+      <li><a href="http://twitter.com/ssbcodes" class="icon fa-twitter alt" target="_blank"><span class="label">Twitter</span></a></li>
+      <li><a href="http://facebook.com/ssbcodes" class="icon fa-facebook alt" target="_blank"><span class="label">Facebook</span></a></li>
+      <li><a href="https://www.instagram.com/ssbcodes/" class="icon fa-instagram alt" target="_blank"><span class="label">Instagram</span></a></li>
+      <li><a href="http://github.com/sarahbohr" class="icon fa-github alt" target="_blank"><span class="label">GitHub</span></a></li>
+      <!-- <li><a href="#" class="icon fa-dribbble alt"><span class="label" target="_blank">Dribbble</span></a></li> -->
+    </ul>
+
+   
+
+  </section>
+
+  <p class="copyright">&copy; <script type="text/javascript">
+    document.write(new Date().getFullYear());
+  </script>, Sarah S. Bohr</a></p>
+  
+</footer>
+	</div>
 			
 			<!-- Scripts -->
 			<script src="include.js"></script>
