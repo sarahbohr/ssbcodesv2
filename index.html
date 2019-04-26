@@ -152,46 +152,16 @@
 									<h2>Contact Me</h2>
 									<p>If you're interested in talking more about what I bring to the table, please <a href="mailto:sarah@ssb.codes">contact me!</a></p>
 								</header>
-
-								<!-- <form method="post" action="https://900nvpqp6f.execute-api.us-east-1.amazonaws.com/dev/index.html">
-									<label>Your e-mail</label>
-									<input type="text" name="from">
-								
-									<label>Subject</label>
-									<input type="text" name="subject">
-								
+								<form id="contactForm">
+									<label>Name</label>
+									<input type="text" placeholder="Name" name="name" required>
+									<label>Email Address</label>
+									<input type="email" placeholder="Email Address" name="email" required>
 									<label>Message</label>
-									<textarea name="body"></textarea>
-									<input type="submit" value="Send Message" class="primary" />
-								</form> -->
-
-								<!-- Form 
-										<form action="https://900nvpqp6f.execute-api.us-east-1.amazonaws.com/dev/contact" method="POST" id="contact-form">
-											<input type="hidden" name="contact_number">
-											<div class="col-2"></div>
-											<div class="row gtr-uniform">
-													<div class="col-2"></div>
-												<div class="col-4 col-12-xsmall">
-													<input type="text" name="from" id="from" value="" placeholder="Name" />
-												</div>
-												<div class="col-4 col-12-xsmall">
-													<input type="email" name="user-email" id="user-email" value="" placeholder="Email" />
-												</div>
-												<div class="col-2"></div>
-												<div class="col-2"></div>
-												<div class="col-8">
-													<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-												</div>
-												<div class="col-2"></div>
-												<div class="col-2"></div>
-												<div class="col-8">
-													<ul class="actions">
-														<li><input type="submit" value="Send Message" class="primary" id="myBtn" /></li>
-														<li><input type="reset" value="Reset" /></li>
-													</ul>
-												</div>
-											</div>
-										</form> -->
+									<textarea rows="5" placeholder="Message" name="content" required></textarea>
+									<div id="toast"></div>
+									<button type="submit" id="submit">Send</button>
+								</form>
 							</section>
 					</div>
 		<!-- Footer -->
@@ -225,6 +195,7 @@
 	</div>
 			
 			<!-- Scripts -->
+			<script src="assets/form/js/form.js"></script>
 			<script src="include.js"></script>
 			<script>
 				includeHTML();
